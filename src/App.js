@@ -18,7 +18,7 @@ function App() {
 
     try {
       const response = await axios.get(
-        `http://localhost:5000/api/download?url=${encodeURIComponent(url)}`,
+        `https://insta-downloader-backend.onrender.com/api/download?url=${encodeURIComponent(url)}`,
         { timeout: 10000 }
       );
 
